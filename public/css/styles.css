@@ -1,0 +1,327 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto';
+    background-color: #ebebeb;
+}
+.home-banner{
+    margin-top: 215px;
+    width: 100vw;
+}
+/*HEADER*/
+.main-header{
+    background-color: #EAC926;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.logo-header{
+    width: 200px;/*50% Search Bar 50% Too*/
+}
+.main-header-top-bar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+}
+.burger-menu{
+    background-color: #1259c3;
+    color: #ffffff;
+    display: block;
+    max-width: 40px;
+    padding: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+.main-navbar{
+    display: none;
+}
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+/*MAIN*/
+main {
+    width: 90%;
+    text-align: center;
+    padding:auto;
+    margin:auto;
+}
+article {
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    transition: box-shadow 450ms;
+}
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+main section h2{
+    color:  #666 ;
+    text-align: left;
+    font-size: 24px;
+    margin: 10px 0;
+}
+main section article div{
+    border-top: solid 1px #ebebeb;
+    text-align: left;
+    padding: 15px;
+    position: relative;  
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+.fa-truck{
+    color: #39b54a;
+    transition: all 3s;
+}
+.fa-truck:hover{
+    animation-name: ninety-truck;
+    animation-duration: 3s;
+}
+@keyframes ninety-truck {
+    100%{
+        transform: rotateZ(-90deg);
+    }
+}
+
+main img {
+    width: 100%;
+}
+.prices{
+    font-size: 18px;
+    width: 30%;
+}
+.discounts{
+    color: #39b54a;
+    width: 70%;
+}
+.descriptions{
+    opacity: 0;
+    margin-top: 5px;
+    transition: opacity 450ms;
+}
+.descriptions:hover{
+    opacity: 1;
+}
+.discounts, .descriptions{
+    font-size: 16px;
+}
+.all-in-line{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    align-items: center;
+}
+/*FOOTER*/
+footer{
+    background-color: #ffffff;
+    text-align: center;
+    padding: 25px;
+}
+footer section{
+    margin-bottom: 20px;
+}
+footer p{
+    color:#666;
+}
+.logo-foot{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+    transition: all 400ms;
+}
+.logo-foot:hover{
+    color: #39b54a;
+    cursor: pointer
+}
+.align-left{
+    text-align: left;
+}
+
+/*FORM*/
+.create-form{
+    padding: 50px 15px;
+    margin-top:220px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+.login-form{
+    padding: 150px 15px;
+}
+.control-form{
+    margin-bottom: 25px;
+}
+.border-form {
+    border: 1px solid rgb(100 100 100 / 50%);
+    margin: 35px;
+    padding: 10px;
+}
+.control-form label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+.control{
+    border-radius: 15px;
+    border: 1px solid rgb(100 100 100 / 50%);
+    padding: 8px;
+}
+.fa-users{
+    color: white;
+    background-color: #1259c3;
+    border-radius: 25px;
+    padding: 15px;
+    box-shadow: 0px 0px 5px rgb(100 100 100);
+    transition: all 400ms;
+}
+.button-form{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 360px;
+}
+.icon-button{
+    border:0;
+}
+.send-button{
+    padding: 5px 50px;
+    background-color: #1259c3;
+    color: #ffffff;
+    border-radius: 15px;
+    border: 0px;
+    transition: all 400ms;
+}
+.send-button:hover,.fa-users:hover{
+    background-color: #0022AA;
+    cursor: pointer;
+}
+.form-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.bold-action{
+    font-weight: bold;
+    font-style: italic;
+}
+/*QUERIES*/
+
+@media (min-width: 768px) { /*TABLET*/
+    .main-header-top-bar, .main-navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar li{
+        margin: 0 5px;
+    }
+    .home-banner{
+        margin-top: 126px;
+    }
+    /*MAIN*/
+    .row-column{
+        display: flex;
+        flex-direction: row;
+    }
+    .row-container{
+        flex-flow:column wrap;
+        column-width: auto;
+        column-count: 2;
+    }
+    article{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+        }
+    .descriptions{
+        display: block;
+    }
+    /*FOOTER*/
+    footer div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+    }
+    footer section{
+        padding: 10px;
+    }
+    /*FORMS*/
+    .create-form{
+        max-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1200px) { /*DESKTOP*/
+    .logo{
+        width: 250px;
+    }
+    .main-header-top-bar, .main-navbar{
+        max-width: 1200px;
+    }
+    .copy-header{
+        max-width: none;
+        font-size: 22px;
+        font-weight: 400;
+        margin: 0;
+    }
+    .main-navbar{
+        margin-top: 30px;
+    }
+    .main-navbar li{
+        margin: 0 10px;
+    }
+    .main-navbar a{
+        font-size: 19px;
+    }
+    .row-container{
+        column-count: 4;
+    }
+}
